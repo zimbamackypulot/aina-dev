@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aina Dizon | Graphic & UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    
+
+    <!-- =====================================
+         PAGE 1: ANIMATED WELCOME INTRO SCREEN
+         ===================================== -->
+    <div id="intro-screen">
+        <svg class="intro-kitty" viewBox="0 0 120 100">
+            <path d="M95 82 Q 115 65 110 45" stroke="#18181b" stroke-width="7" stroke-linecap="round" fill="none" class="cat-tail"/>
+            <polygon points="28,42 35,12 55,32" fill="#18181b"/>
+            <polygon points="33,38 37,20 49,32" fill="#3f3f46"/>
+            <polygon points="92,42 85,12 65,32" fill="#18181b"/>
+            <polygon points="87,38 83,20 71,32" fill="#3f3f46"/>
+            <ellipse cx="60" cy="58" rx="38" ry="32" fill="#18181b"/>
+            <g class="cat-eyes">
+                <circle cx="45" cy="56" r="12" fill="#fff"/>
+                <circle cx="47" cy="56" r="7.5" fill="#18181b"/>
+                <circle cx="44" cy="52" r="3" fill="#fff"/>
+                <circle cx="75" cy="56" r="12" fill="#fff"/>
+                <circle cx="73" cy="56" r="7.5" fill="#18181b"/>
+                <circle cx="70" cy="52" r="3" fill="#fff"/>
+            </g>
+            <ellipse cx="60" cy="66" rx="3" ry="2" fill="#f472b6"/>
+            <ellipse cx="42" cy="86" rx="9" ry="6" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+            <ellipse cx="78" cy="86" rx="9" ry="6" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+        </svg>
+
+        <div class="intro-tag">✦ WELCOME TO MY CREATIVE GARDEN</div>
+        <h2 class="intro-title">Aina <span>Dizon</span></h2>
+        <p class="intro-sub">Graphic Designer & UI/UX Designer Portfolio</p>
+        <button class="enter-btn" onclick="startLoadingTransition()">Enter Portfolio ✨</button>
+    </div>
+
+    <!-- =====================================
+         PAGE 1.5: CUTE LOADING BAR SCREEN
+         ===================================== -->
+    <div id="loading-screen">
+        <div class="loading-box">
+            <div class="runner-character">
+                <span class="runner-emoji">🐱🌸</span>
+                <span class="puff p1">💨</span>
+                <span class="puff p2">✨</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+
+            <p id="loading-label" class="loading-text">LOADING.</p>
+        </div>
+    </div>
+
+    <!-- =====================================
+         BACKGROUND GLOWS & GILID-GILID ANIMATION
+         ===================================== -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="floating-decors">
+        <span class="d1">✦</span>
+        <span class="d2">💜</span>
+        <span class="d3">🌷</span>
+        <span class="d4">✦</span>
+        <span class="d5">🌸</span>
+    </div>
+
+    <!-- =====================================
+         PAGE 2: MAIN BENTO PORTFOLIO
+         ===================================== -->
+    <div class="portfolio-wrapper">
+        <main class="bento-container">
+            
+            <!-- Intro & Profile Card -->
+           <!-- Intro & Profile Card -->
+            <section class="card hero-card">
+                <div class="hero-top">
+                    <div class="status-badge">
+                        <span class="dot"></span> Available for Design Projects ✨
+                    </div>
+                </div>
+
+                <div class="hero-split">
+                    <div class="hero-photo-wrap">
+                        <img src="c:\Users\Lg\Downloads\Canva - download.jpg" alt="Aina Dizon" class="profile-pic">
+                    </div>
+
+                    <div class="hero-content">
+                        <h1>Hi, I'm <span class="highlight">Aina Dizon</span></h1>
+                        <p class="role">Graphic Designer & UI/UX Designer</p>
+                        <p class="bio">Passionate about crafting aesthetic visuals, intuitive user interfaces, and memorable brand identities that bring ideas to life.</p>
+
+                        <div class="cta-group">
+                            <a href="mailto:aina.dizon@example.com" class="btn primary">Let's Collaborate 💌</a>
+                            <a href="#garden-map" class="btn secondary">Explore Flower Studio ↓</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Design Toolkit Card -->
+            <section class="card tools-card">
+                <span class="card-label">✦ DESIGN TOOLKIT</span>
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Canva</span>
+                    <span>Adobe Photoshop</span>
+                    <span>Illustrator</span>
+                    <span>UI Prototyping</span>
+                    <span>Wireframing</span>
+                    <span>Brand Identity</span>
+                </div>
+            </section>
+
+             <!-- Design Toolkit Card -->
+            <section class="card tools-card">
+                <span class="card-label">✦ SERVICES</span>
+                <div class="tags">
+                    <span>Image Editor</span>
+                    <span>Document Creation</span>
+                    <span>Graphic Design</span>
+                    <span> logo Illustrator</span>
+                    <span>UI Prototyping</span>
+                    <span>Wireframing</span>
+                </div>
+            </section>
+
+            <!-- Design Philosophy Card -->
+            <section class="card vibe-card">
+                <span class="card-label">✦ DESIGN PHILOSOPHY</span>
+                <p class="italic-quote">"Good design is where clean functionality meets soft, intentional beauty."</p>
+            </section>
+             <!-- Design Philosophy Card -->
+            <section class="card vibe-card">
+                <span class="card-label">✦ DESIGN PHILOSOPHY</span>
+                <p class="italic-quote">"Study Hard and Achieve your Goals step by step."</p>
+            </section>
+
+              <!-- Design Philosophy Card -->
+            <section class="card vibe-card">
+                <span class="card-label">✦ DESIGN PHILOSOPHY</span>
+                <p class="italic-quote">"This the beginning of your chapter."</p>
+            </section>
+            <!-- Socials Card -->
+            <section class="card social-card span-3">
+                <span class="card-label">✦ CONNECT & FOLLOW MY WORK</span>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/aina.bautistadizon" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                    <a href="https://github.com/zimbamackypulot" target="_blank" rel="noopener noreferrer">Github ↗</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- =====================================
+             INTERACTIVE FLOWER GARDEN -> SHOP MAP
+             ===================================== -->
+        <section id="garden-map" class="flower-studio-section">
+            
+            <!-- Top Control Bar -->
+            <div class="studio-header">
+                <div class="studio-title-box">
+                    <h2>Projects <span class="italic-purple">From Garden to Flower Shop</span></h2>
+                    <p class="studio-hint">🌸 Watch Aina gather flowers in the garden first, then walk into the Flower Shop!</p>
+                </div>
+                <div class="studio-controls">
+                    <button class="ctrl-btn dark" id="auto-btn" onclick="toggleAutoWalk()">AUTO WALK ▶</button>
+                    <button class="ctrl-btn" onclick="resetWalk()">REPLAY ↺</button>
+                </div>
+            </div>
+
+            <!-- Main Map + Side Details Split -->
+            <div class="studio-grid">
+                
+                <!-- LEFT: Interactive Flower Garden & Shop Map -->
+                <div class="map-board">
+                    <div class="map-inner-border">
+                        
+                        <!-- Dotted Walkway Path from Garden to Shop -->
+                        <svg class="garden-path-svg" viewBox="0 0 600 440" preserveAspectRatio="none">
+                            <path d="M 95 365 L 250 365 L 250 280 L 120 220 L 120 95 L 485 95 L 485 320" 
+                                  fill="none" stroke="#a78bfa" stroke-width="3" stroke-dasharray="7 7" />
+                        </svg>
+
+                        <!-- Zone Labels -->
+                        <div class="zone-badge garden-zone">🌿 THE FLOWER GARDEN</div>
+                        <div class="zone-badge shop-zone">🏪 AINA'S FLOWER SHOP</div>
+
+                        <!-- Centerpiece: Flower Shop Pavilion -->
+                        <div class="center-pavilion">
+                            <div class="pavilion-roof">🌸 🌷 🌺</div>
+                            <div class="pavilion-diamond">
+                                <span>Aina's<br><em>Flower</em><br>Shop</span>
+                            </div>
+                            <div class="pavilion-base">Main Boutique</div>
+                        </div>
+
+                        <!-- Animated Character (Girl picking flowers -> walking to shop) -->
+                        <div id="walker-avatar" class="walker picking">
+                            <span class="walker-tag" id="walker-status">Picking flowers... 🌸</span>
+                            <div class="walker-character">
+                                <span class="char-emoji">👩‍🎨</span>
+                                <span class="basket-flowers" id="basket-flowers">🌷🌸</span>
+                            </div>
+                        </div>
+
+                        <!-- STOP 0 -->
+                        <button class="map-stop active stop-0" data-index="0" onclick="selectStop(0)">
+                            <span class="featured-pill">🌿 START HERE</span>
+                            <div class="booth-icon">🌷🌸🪻</div>
+                            <div class="stop-label"><span class="num">0</span> Flower Garden</div>
+                        </button>
+
+                        <!-- STOP 1 -->
+                        <button class="map-stop stop-1" data-index="1" onclick="selectStop(1)">
+                            <span class="featured-pill">★ FLAGSHIP</span>
+                            <div class="booth-icon">💐</div>
+                            <div class="stop-label"><span class="num">1</span> Bloom AR Shop</div>
+                        </button>
+
+                        <!-- STOP 2 -->
+                        <button class="map-stop stop-2" data-index="2" onclick="selectStop(2)">
+                            <span class="featured-pill">★ BLOOM</span>
+                            <div class="booth-icon">🌸</div>
+                            <div class="stop-label"><span class="num">2</span> BLOOM</div>
+                        </button>
+
+                        <!-- STOP 3 -->
+                        <button class="map-stop stop-3" data-index="3" onclick="selectStop(3)">
+                            <span class="featured-pill">★ CRAFT</span>
+                            <div class="booth-icon">🎀</div>
+                            <div class="stop-label"><span class="num">3</span> Mhels Craft</div>
+                        </button>
+
+                        <!-- STOP 4 -->
+                        <button class="map-stop stop-4" data-index="4" onclick="selectStop(4)">
+                            <span class="featured-pill">★ CRAFT</span>
+                            <div class="booth-icon">🔤</div>
+                            <div class="stop-label"><span class="num">4</span> ALPHABETS</div>
+                        </button>
+
+                        <!-- STOP 5 -->
+                        <button class="map-stop stop-5" data-index="5" onclick="selectStop(5)">
+                            <span class="featured-pill">★ CRAFT</span>
+                            <div class="booth-icon">🎀</div>
+                            <div class="stop-label"><span class="num">5</span> XENA'S CRAFT</div>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: Project Inspector Panel -->
+                <aside class="inspector-panel">
+                    <div>
+                        <span class="stop-counter" id="detail-counter">STOP 0 OF 5 • THE FLOWER GARDEN</span>
+                        <h3 class="detail-title" id="detail-title">Gathering Fresh Inspiration</h3>
+                        
+                        <!-- PROJECT IMAGE PREVIEW BOX -->
+                        <div class="detail-preview" id="detail-preview" onclick="openProjectModal()" title="Click to enlarge preview">
+                            <img id="detail-image" src="graveline/GRAVE LINE.png" alt="Project Preview" class="project-preview-img">
+                            <span class="preview-caption-badge" id="detail-caption">Moodboards & Pastel Color Exploration</span>
+                        </div>
+
+                        <p class="detail-meta" id="detail-meta">Step 1 • Concept, Moodboards & Color Theory</p>
+                        <p class="detail-desc" id="detail-desc">Aina starts in the flower garden—gathering fresh blooms, soft lavender palettes, and creative inspiration before bringing them inside the Flower Shop.</p>
+
+                        <span class="what-i-did-label">CREATIVE PROCESS</span>
+                        <p class="detail-role" id="detail-role">Click 'NEXT BOOTH →' or 'AUTO WALK ▶' to watch Aina carry her flowers into the Flower Shop!</p>
+                    </div>
+
+                    <div class="inspector-footer">
+                        <div class="action-buttons">
+                            <button type="button" class="btn-outline" onclick="openProjectModal()">VIEW DETAILS</button>
+                            <a href="#" id="detail-site-link" target="_blank" rel="noopener noreferrer" class="btn-solid">VIEW SITE ↗</a>
+                        </div>
+                        <div class="nav-arrows">
+                            <button class="ctrl-btn" onclick="prevStop()">← BACK</button>
+                            <button class="ctrl-btn dark" onclick="nextStop()">NEXT BOOTH →</button>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- =====================================
+         PROJECT DETAILS MODAL (WITH FULL IMAGE & SCREENSHOTS)
+         ===================================== -->
+    <div id="project-modal" class="modal-overlay" onclick="closeProjectModal(event)">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeProjectModal()">✕</button>
+            <span class="stop-counter" id="modal-counter">BOOTH 1 OF 5</span>
+            <h3 class="detail-title" id="modal-title">Project Title</h3>
+            
+            <div class="modal-image-wrap">
+                <img id="modal-image" src="" alt="Full Project Preview" class="modal-preview-img">
+            </div>
+
+            <!-- SCREENSHOT THUMBNAILS SA LOOB NG MODAL -->
+            <div id="modal-thumbs" class="modal-thumbs"></div>
+
+            <p class="detail-meta" id="modal-meta">Tools & Role</p>
+            <p class="detail-desc" id="modal-desc">Full project description...</p>
+            <span class="what-i-did-label">KEY HIGHLIGHTS & DELIVERABLES</span>
+            <p class="detail-role" id="modal-highlights">Highlights...</p>
+            <div class="action-buttons">
+                <a href="#" id="modal-site-btn" target="_blank" rel="noopener noreferrer" class="btn-solid">VIEW SITE ↗</a>
+                <button type="button" class="btn-outline" onclick="closeProjectModal()">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================
+         CUTE MEOWING BLACK CAT MASCOT SA GILID
+         ===================================== -->
+    <div class="cat-widget" onclick="petCat()" title="Click me for a cute meow!">
+        <div class="speech-bubble" id="cat-bubble">
+            <span id="cat-text">Meow~ Tap me!</span> <span class="bubble-heart">♥</span>
+        </div>
+        <svg class="cat-svg" viewBox="0 0 120 100">
+            <path d="M92 82 Q 116 68 112 45" stroke="#18181b" stroke-width="7" stroke-linecap="round" fill="none" class="cat-tail"/>
+            <polygon points="28,42 35,12 55,32" fill="#18181b"/>
+            <polygon points="33,38 37,20 49,32" fill="#3f3f46"/>
+            <polygon points="92,42 85,12 65,32" fill="#18181b"/>
+            <polygon points="87,38 83,20 71,32" fill="#3f3f46"/>
+            <ellipse cx="60" cy="58" rx="38" ry="32" fill="#18181b"/>
+            <g class="cat-eyes">
+                <circle cx="45" cy="56" r="12" fill="#fff"/>
+                <circle cx="47" cy="56" r="7.5" fill="#18181b"/>
+                <circle cx="44" cy="52" r="3" fill="#fff"/>
+                <circle cx="75" cy="56" r="12" fill="#fff"/>
+                <circle cx="73" cy="56" r="7.5" fill="#18181b"/>
+                <circle cx="70" cy="52" r="3" fill="#fff"/>
+            </g>
+            <ellipse cx="60" cy="65" rx="2.8" ry="1.8" fill="#f472b6"/>
+            <ellipse cx="60" cy="71" rx="4" ry="1.5" fill="#f472b6" id="cat-mouth" class="cat-mouth"/>
+            <ellipse cx="42" cy="86" rx="9" ry="6" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+            <ellipse cx="78" cy="86" rx="9" ry="6" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+        </svg>
+    </div>
+
+    <script>
+        let audioCtx = null;
+
+        function playCuteMeow(pitchBoost = 1) {
+            try {
+                if (!audioCtx) {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    audioCtx = new AudioContext();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+
+                const now = audioCtx.currentTime;
+                const osc = audioCtx.createOscillator();
+                const overtone = audioCtx.createOscillator();
+                const filter = audioCtx.createBiquadFilter();
+                const gain = audioCtx.createGain();
+                const overtoneGain = audioCtx.createGain();
+
+                osc.type = 'triangle';
+                overtone.type = 'sine';
+
+                osc.frequency.setValueAtTime(520 * pitchBoost, now);
+                osc.frequency.exponentialRampToValueAtTime(860 * pitchBoost, now + 0.14);
+                osc.frequency.exponentialRampToValueAtTime(490 * pitchBoost, now + 0.52);
+
+                overtone.frequency.setValueAtTime(1040 * pitchBoost, now);
+                overtone.frequency.exponentialRampToValueAtTime(1680 * pitchBoost, now + 0.14);
+                overtone.frequency.exponentialRampToValueAtTime(920 * pitchBoost, now + 0.52);
+
+                filter.type = 'bandpass';
+                filter.frequency.setValueAtTime(1100, now);
+                filter.frequency.linearRampToValueAtTime(1650, now + 0.15);
+                filter.frequency.linearRampToValueAtTime(850, now + 0.52);
+                filter.Q.value = 2.2;
+
+                gain.gain.setValueAtTime(0.001, now);
+                gain.gain.linearRampToValueAtTime(0.25, now + 0.08);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.55);
+
+                overtoneGain.gain.setValueAtTime(0.001, now);
+                overtoneGain.gain.linearRampToValueAtTime(0.08, now + 0.09);
+                overtoneGain.gain.exponentialRampToValueAtTime(0.001, now + 0.50);
+
+                osc.connect(filter);
+                overtone.connect(overtoneGain);
+                overtoneGain.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc.start(now);
+                overtone.start(now);
+                osc.stop(now + 0.56);
+                overtone.stop(now + 0.56);
+            } catch (e) {}
+        }
+
+        const catLines = [
+            { text: "Meow~ Purr... ♥", pitch: 1.0 },
+            { text: "Mew! Pick flowers first! 🌸", pitch: 1.08 },
+            { text: "Purr-meow~ So pretty! 💜", pitch: 0.96 },
+            { text: "Mrow~ Hire Aina! ✨", pitch: 1.05 }
+        ];
+        let catIndex = 0;
+        let typeTimer = null;
+
+        const catPositions = [
+            { bottom: '-12px', right: '24px', left: 'auto', top: 'auto' },
+            { bottom: '-12px', left: '24px', right: 'auto', top: 'auto' },
+            { top: '42%', right: '16px', bottom: 'auto', left: 'auto' },
+            { top: '18%', right: '24px', bottom: 'auto', left: 'auto' },
+            { top: '38%', left: '16px', bottom: 'auto', right: 'auto' }
+        ];
+        let posIndex = 0;
+
+        function moveCatRandomly() {
+            const catEl = document.querySelector('.cat-widget');
+            let nextPos;
+            do {
+                nextPos = Math.floor(Math.random() * catPositions.length);
+            } while (nextPos === posIndex);
+            posIndex = nextPos;
+
+            const p = catPositions[posIndex];
+            catEl.style.top = p.top;
+            catEl.style.bottom = p.bottom;
+            catEl.style.left = p.left;
+            catEl.style.right = p.right;
+        }
+
+        function triggerCatMeow(lineObj) {
+            const textEl = document.getElementById('cat-text');
+            const mouthEl = document.getElementById('cat-mouth');
+
+            playCuteMeow(lineObj.pitch);
+
+            clearInterval(typeTimer);
+            textEl.textContent = "";
+            mouthEl.classList.add('talking');
+
+            let i = 0;
+            typeTimer = setInterval(() => {
+                textEl.textContent += lineObj.text.charAt(i);
+                i++;
+                if (i >= lineObj.text.length) {
+                    clearInterval(typeTimer);
+                    setTimeout(() => mouthEl.classList.remove('talking'), 350);
+                }
+            }, 45);
+        }
+
+        function petCat() {
+            triggerCatMeow(catLines[catIndex]);
+            catIndex = (catIndex + 1) % catLines.length;
+            moveCatRandomly();
+        }
+
+        function startLoadingTransition() {
+            const introScreen = document.getElementById('intro-screen');
+            const loadingScreen = document.getElementById('loading-screen');
+            const fillEl = document.getElementById('progress-fill');
+            const labelEl = document.getElementById('loading-label');
+
+            introScreen.classList.add('hide');
+            loadingScreen.classList.add('active');
+
+            let progress = 0;
+            const dots = ['LOADING.', 'LOADING..', 'LOADING...'];
+            let dotIdx = 0;
+
+            const dotInterval = setInterval(() => {
+                dotIdx = (dotIdx + 1) % dots.length;
+                labelEl.textContent = dots[dotIdx];
+            }, 260);
+
+            const loadInterval = setInterval(() => {
+                progress += 4;
+                if (progress > 100) progress = 100;
+                fillEl.style.width = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(loadInterval);
+                    clearInterval(dotInterval);
+                    setTimeout(() => {
+                        loadingScreen.classList.remove('active');
+                        document.body.classList.add('entered');
+                        setTimeout(() => petCat(), 350);
+                    }, 250);
+                }
+            }, 45);
+        }
+
+        function createPlaceholderArt(title, subtitle, c1, c2) {
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+                <defs>
+                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="${c1}"/>
+                        <stop offset="100%" stop-color="${c2}"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="480" rx="24" fill="url(#g)"/>
+                <circle cx="140" cy="110" r="70" fill="#ffffff" fill-opacity="0.25"/>
+                <circle cx="670" cy="370" r="95" fill="#ffffff" fill-opacity="0.25"/>
+                <rect x="110" y="95" width="580" height="290" rx="20" fill="#ffffff" fill-opacity="0.9"/>
+                <text x="400" y="220" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#2e2442" text-anchor="middle">${title}</text>
+                <text x="400" y="265" font-family="Arial, sans-serif" font-size="18" fill="#6b5e82" text-anchor="middle">${subtitle}</text>
+                <text x="400" y="315" font-family="monospace" font-size="14" fill="#8b5cf6" text-anchor="middle">Replace with your screenshot in images/ folder</text>
+            </svg>`;
+            return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+        }
+
+        const flowerStops = [
+            {
+                counter: "STOP 0 OF 5 • THE FLOWER GARDEN",
+                title: "Gathering Fresh Inspiration",
+                mapLabel: "Flower Garden",
+                badge: "🌿 START HERE",
+                icon: "🌷🌸🪻",
+                image: "graveline/GRAVE LINE.png",
+                fallback: createPlaceholderArt("Creative Moodboard & Palette", "Color Theory & Botanical Sketches", "#ede9fe", "#fce7f3"),
+                caption: "Moodboards & Pastel Color Exploration",
+                meta: "Step 1 • Concept, Moodboards & Color Theory",
+                desc: "Aina starts in the flower garden—gathering fresh blooms, soft lavender palettes, and creative inspiration before bringing them inside the Flower Shop.",
+                role: "Click 'NEXT BOOTH →' or 'AUTO WALK ▶' to watch Aina carry her flowers into the Flower Shop!",
+                highlights: "Pastel moodboards, lavender-pink palette exploration, and floral motif sketches.",
+                siteUrl: "#garden-map",
+                walkerStatus: "Picking flowers... 🌸",
+                basket: "🌷🌸",
+                isPicking: true
+            },
+            {
+                counter: "BOOTH 1 OF 5 • FLOWER SHOP ENTRANCE",
+                title: "Bloom AR Flower Shop",
+                mapLabel: "Bloom AR Shop",
+                badge: "★ FLAGSHIP",
+                icon: "💐",
+                image: "Screenshot 2026-11-22 155405.png",
+                fallback: createPlaceholderArt("Bloom AR Flower Shop UI", "Custom Bouquet Builder & E-Commerce", "#ddd6fe", "#fbcfe8"),
+                caption: "Custom Bouquet Builder Interface",
+                meta: "2026 • Figma, UI/UX, Interactive Prototyping",
+                desc: "Arrived at the Flower Shop! Customers can customize pastel bouquets, pick ribbon styles, and preview floral arrangements in real time.",
+                role: "Led the UI/UX design, soft lavender color palette, custom floral iconography, and mobile-first checkout flow.",
+                highlights: "Interactive bouquet customizer flow, clean product cards, and streamlined order summary UI.",
+                siteUrl: "https://www.figma.com/design/ovgdKSRvcNSJiNvWwLnBw0/BLOOM?node-id=0-1&t=cJIgsjwUdpBEjAzx-1",
+                walkerStatus: "Arranging bouquets! 💐",
+                basket: "💐✨",
+                isPicking: false
+            },
+            {
+                counter: "BOOTH 2 OF 5 • BRANDING & WEB",
+                title: "BLOOM",
+                mapLabel: "BLOOM",
+                badge: "★ BLOOM",
+                icon: "🌸",
+                image: "Screenshot 2026-11-22 155405.png",
+                fallback: createPlaceholderArt("BLOOM", "Floral Web & Brand Experience", "#f3e8ff", "#fce7f3"),
+                caption: "BLOOM Website & Floral Showcase",
+                meta: "2026 • Web Design, UI/UX, Visual Identity",
+                desc: "Floral showcase and storefront experience for BLOOM featuring curated arrangements, clean navigation, and soft botanical visuals.",
+                role: "Designed the layout, visual styling, interface sections, and brand presentation.",
+                highlights: "Hero floral showcase, clean top navigation, and cohesive pastel interface.",
+                siteUrl: "https://honeydew-duck-132160.hostingersite.com",
+                walkerStatus: "At BLOOM! 🌸",
+                basket: "🌸",
+                isPicking: false
+            },
+            {
+                counter: "BOOTH 3 OF 5 • CRAFT & DESIGN",
+                title: "Mhels Craft",
+                mapLabel: "Mhels Craft",
+                badge: "★ CRAFT",
+                icon: "🎀",
+                image: "hel/1.png",
+                fallback: createPlaceholderArt("Mhels Craft", "Handmade Crafts & Visual Identity", "#fce7f3", "#fae8ff"),
+                caption: "Mhels Craft Visual & Product Showcase",
+                meta: "2026 • Graphic Design, Brand Identity, UI",
+                desc: "Creative showcase and visual identity for Mhels Craft featuring cute handmade charms, pastel aesthetic details, and clean presentation.",
+                role: "Designed the visual identity, graphic styling, layout, and digital showcase.",
+                highlights: "Soft pastel color palette, custom craft visuals, and clean presentation layout.",
+                siteUrl: "#garden-map",
+                walkerStatus: "At Mhels Craft! 🎀",
+                basket: "🎀✨",
+                isPicking: false,
+                screenshot: [
+                    "hel/1.png", "hel/2.png", "hel/3.png"
+                ]
+            },
+            {
+                counter: "BOOTH 4 OF 5 • CRAFT & DESIGN",
+                title: "ALPHABETS",
+                mapLabel: "ALPHABETS",
+                badge: "★ CRAFT",
+                icon: "🔤",
+                image: "alphabets/a.png",
+                fallback: createPlaceholderArt("ALPHABETS", "Lettering & Visual Identity", "#fce7f3", "#fae8ff"),
+                caption: "ALPHABETS Visual & Typography Showcase",
+                meta: "2026 • Graphic Design, Brand Identity, UI",
+                desc: "Creative showcase and visual identity for ALPHABETS featuring custom lettering details, pastel aesthetic styling, and clean presentation.",
+                role: "Designed the visual identity, graphic styling, layout, and digital showcase.",
+                highlights: "Soft pastel color palette, custom typography visuals, and clean presentation layout.",
+                siteUrl: "#garden-map",
+                walkerStatus: "At ALPHABETS! 🔤",
+                basket: "🎀✨",
+                isPicking: false,
+                screenshot: [
+                    "alphabets/a.png", "alphabets/b.png", "alphabets/c.png", "alphabets/4.png", "alphabets/5.png", "alphabets/6.png","alphabets/7.png","alphabets/8.png",
+                    "alphabets/9.png","alphabets/10.png","alphabets/11.png", "alphabets/12.png", "alphabets/13.png", "alphabets/14.png", "alphabets/15.png",
+                    "alphabets/16.png","alphabets/17.png","alphabets/18.png","alphabets/19.png","alphabets/20.png","alphabets/21.png"
+                ]
+            },
+            {
+                counter: "BOOTH 5 OF 5 • CRAFT & DESIGN",
+                title: "XENA'S CRAFT",
+                mapLabel: "XENA'S CRAFT",
+                badge: "★ CRAFT",
+                icon: "🎀",
+                image: "hel/1.png",
+                fallback: createPlaceholderArt("XENA'S CRAFT", "Handmade Crafts & Visual Identity", "#fce7f3", "#fae8ff"),
+                caption: "XENA'S CRAFT Visual & Product Showcase",
+                meta: "2026 • Graphic Design, Brand Identity, UI",
+                desc: "Creative showcase and visual identity for XENA'S CRAFT featuring cute handmade charms, and fuzzy wires",
+                role: "Designed the visual identity, graphic styling, layout, and digital showcase.",
+                highlights: "Soft pastel color palette, custom craft visuals, and clean presentation layout.",
+                siteUrl: "#garden-map",
+                walkerStatus: "At XENA'S CRAFT! 🎀",
+                basket: "🎀✨",
+                isPicking: false
+            }
+        ];
+
+        function syncMapStopsWithData(stops) {
+            const totalBooths = Math.max(0, stops.length - 1);
+            const buttons = document.querySelectorAll('.map-stop');
+
+            buttons.forEach((btn, idx) => {
+                const item = stops[idx];
+                if (!item) {
+                    btn.style.display = 'none';
+                    return;
+                }
+                btn.style.display = '';
+
+                const pill = btn.querySelector('.featured-pill');
+                const icon = btn.querySelector('.booth-icon');
+                const label = btn.querySelector('.stop-label');
+
+                if (pill && item.badge) pill.textContent = item.badge;
+                if (icon && item.icon) icon.textContent = item.icon;
+                if (label) {
+                    const textName = item.mapLabel || item.title;
+                    label.innerHTML = `<span class="num">${idx}</span> ${textName}`;
+                }
+
+                if (idx === 0) {
+                    item.counter = `STOP 0 OF ${totalBooths} • THE FLOWER GARDEN`;
+                } else {
+                    const parts = item.counter.split('•');
+                    const catPart = parts[1] ? `•${parts[1]}` : '• PROJECT SHOWCASE';
+                    item.counter = `BOOTH ${idx} OF ${totalBooths} ${catPart}`;
+                }
+            });
+        }
+
+        syncMapStopsWithData(flowerStops);
+
+        function getStopScreenshots(data) {
+            if (Array.isArray(data.screenshot) && data.screenshot.length > 0) {
+                return data.screenshot;
+            }
+            if (Array.isArray(data.screenshots) && data.screenshots.length > 0) {
+                return data.screenshots;
+            }
+            return [data.image];
+        }
+
+        function setPreviewImage(imgEl, src, fallbackSrc, title) {
+            imgEl.onerror = function() {
+                this.onerror = null;
+                this.src = fallbackSrc;
+            };
+            imgEl.src = src;
+            imgEl.alt = title;
+        }
+
+        let currentStop = 0;
+        let autoWalkInterval = null;
+        let activeModalShotIndex = 0;
+
+        function selectStop(index) {
+            currentStop = index;
+            const data = flowerStops[index];
+
+            document.querySelectorAll('.map-stop').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            const walker = document.getElementById('walker-avatar');
+            walker.className = 'walker step-' + index + (data.isPicking ? ' picking' : '');
+
+            document.getElementById('walker-status').textContent = data.walkerStatus;
+            document.getElementById('basket-flowers').textContent = data.basket;
+
+            const imgEl = document.getElementById('detail-image');
+            setPreviewImage(imgEl, data.image, data.fallback, data.title);
+
+            document.getElementById('detail-counter').textContent = data.counter;
+            document.getElementById('detail-title').textContent = data.title;
+            document.getElementById('detail-caption').textContent = data.caption;
+            document.getElementById('detail-meta').textContent = data.meta;
+            document.getElementById('detail-desc').textContent = data.desc;
+            document.getElementById('detail-role').textContent = data.role;
+            document.getElementById('detail-site-link').href = data.siteUrl;
+        }
+
+        function renderModalThumbs(data) {
+            const thumbsWrap = document.getElementById('modal-thumbs');
+            const modalImg = document.getElementById('modal-image');
+            if (!thumbsWrap || !modalImg) return;
+
+            const shots = getStopScreenshots(data);
+            thumbsWrap.innerHTML = '';
+
+            if (shots.length <= 1) {
+                thumbsWrap.style.display = 'none';
+                return;
+            }
+
+            thumbsWrap.style.display = 'flex';
+            shots.forEach((shotPath, idx) => {
+                const thumb = document.createElement('img');
+                thumb.className = 'modal-thumb' + (idx === activeModalShotIndex ? ' active' : '');
+                setPreviewImage(thumb, shotPath, data.fallback, `${data.title} preview ${idx + 1}`);
+                thumb.onclick = function(e) {
+                    e.stopPropagation();
+                    activeModalShotIndex = idx;
+                    setPreviewImage(modalImg, shotPath, data.fallback, `${data.title} preview ${idx + 1}`);
+                    document.querySelectorAll('#modal-thumbs .modal-thumb').forEach((el, i) => {
+                        el.classList.toggle('active', i === idx);
+                    });
+                };
+                thumbsWrap.appendChild(thumb);
+            });
+        }
+
+        function openProjectModal() {
+            const data = flowerStops[currentStop];
+            activeModalShotIndex = 0;
+            const shots = getStopScreenshots(data);
+            const modalImg = document.getElementById('modal-image');
+
+            setPreviewImage(modalImg, shots[0], data.fallback, data.title);
+
+            document.getElementById('modal-counter').textContent = data.counter;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-meta').textContent = data.meta;
+            document.getElementById('modal-desc').textContent = data.desc;
+            document.getElementById('modal-highlights').textContent = data.highlights;
+            document.getElementById('modal-site-btn').href = data.siteUrl;
+
+            renderModalThumbs(data);
+            document.getElementById('project-modal').classList.add('open');
+        }
+
+        function closeProjectModal(event) {
+            if (!event || event.target.id === 'project-modal') {
+                document.getElementById('project-modal').classList.remove('open');
+            }
+        }
+
+        function nextStop() {
+            const next = (currentStop + 1) % flowerStops.length;
+            selectStop(next);
+        }
+
+        function prevStop() {
+            const prev = (currentStop - 1 + flowerStops.length) % flowerStops.length;
+            selectStop(prev);
+        }
+
+        function toggleAutoWalk() {
+            const btn = document.getElementById('auto-btn');
+            if (autoWalkInterval) {
+                clearInterval(autoWalkInterval);
+                autoWalkInterval = null;
+                btn.textContent = "AUTO WALK ▶";
+            } else {
+                nextStop();
+                autoWalkInterval = setInterval(nextStop, 3200);
+                btn.textContent = "PAUSE ⏸";
+            }
+        }
+
+        function resetWalk() {
+            if (autoWalkInterval) toggleAutoWalk();
+            selectStop(0);
+        }
+
+        selectStop(0);
+    </script>
+
+</body>
+</html>
